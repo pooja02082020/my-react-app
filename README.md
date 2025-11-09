@@ -41,28 +41,63 @@ It simulates a small online store that allows users to browse products, add them
 | **Language** | JavaScript (ES6) |
 | **Styling** | Inline CSS / Modern UI colors |
 | **Version Control** | Git & GitHub |
-| **Package Manager** | npm / yarn |
+| **Package Manager** | npm |
 
 ---
-
 ## 📂 Project Structure
+perl
+Copy code
 my-react-app/
 │
-├── src/
-│ ├── components/
-│ │ ├── Header.jsx
-│ │ ├── ProductList.jsx
-│ │ ├── Cart.jsx
-│ │ └── Checkout.jsx
-│ ├── App.jsx
-│ └── main.jsx
+├── public/                     # Static assets (favicon, index.html, images)
 │
-├── package.json
-├── vite.config.js
-└── README.md
-
+├── src/                        # Main source code
+│   ├── components/             # Reusable UI components
+│   │   ├── Header.jsx          # Navigation header with cart count
+│   │   ├── ProductList.jsx     # Product listing grid with Add to Cart buttons
+│   │   ├── Cart.jsx            # Cart page with quantity control and remove options
+│   │   └── Checkout.jsx        # Checkout summary with total and confirm button
+│   │
+│   ├── assets/                 # Images or CSS files
+│   ├── App.jsx                 # Main app component controlling navigation
+│   └── main.jsx                # Entry file for rendering React app
+│
+├── package.json                # Project dependencies and scripts
+├── vite.config.js              # Vite configuration
+├── README.md                   # Project documentation
+└── .gitignore                  # Ignored files for Git
 
 ---
+
+
+
+## 📸 Screenshots / Demo
+
+Here’s a quick look at the main pages of the application 👇  
+
+### 🏠 Product Listing Page  
+Displays all available products with “Add to Cart” buttons.  
+![Product Page Screenshot](./src/assets/products.png)
+
+---
+
+### 🛒 Cart Page  
+Shows all selected products with quantity control (+ / –), remove button, and total price.  
+![Cart Page Screenshot](./src/assets/cart.png)
+
+---
+
+### 💳 Checkout Page  
+Displays a frozen snapshot of your confirmed order and total amount.  
+![Checkout Page Screenshot](./src/assets/checkout.png)
+
+---
+
+> 📝 *Tip:*  
+> - To add real screenshots, go to your app, take screenshots (Press `Windows + Shift + S` on Windows or `Command + Shift + 4` on Mac),  
+>   and save them inside your project at `src/assets/`.  
+> - Name them exactly as shown above (`product-page.png`, `cart-page.png`, `checkout-page.png`) or update the filenames in this section.  
+
 
 ## 🚀 How to Run Locally
 
