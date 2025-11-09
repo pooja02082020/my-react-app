@@ -21,6 +21,6 @@ export const products = [
     id: 4,
     name: "AirPods Pro",
     price: 299,
-    image: "https://www.techhive.com/article/1344268/apple-airpods-pro-2nd-gen-review.html"
+    image: "https://www.techhive.com/wp-content/uploads/2023/04/AirPods-Pro-2nd-gen-hero.jpg?resize=1536%2C1227&quality=50&strip=all"
   }
 ]
