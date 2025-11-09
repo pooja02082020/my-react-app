@@ -31,6 +31,7 @@ It simulates a small online store that allows users to browse products, add them
 - **Props & Component Reusability** – Data passed between parent (`App.jsx`) and child components (`Header`, `Cart`, `Checkout`, `ProductList`)  
 - **Event Handling** – Button clicks for adding/removing items, quantity updates, and navigation  
 
+
 ---
 
 ## ⚙️ Technologies
@@ -43,33 +44,28 @@ It simulates a small online store that allows users to browse products, add them
 | **Version Control** | Git & GitHub |
 | **Package Manager** | npm |
 
+```
 ---
+
 ## 📂 Project Structure
-perl
-Copy code
 my-react-app/
 │
-├── public/                     # Static assets (favicon, index.html, images)
+├── src/
+│ ├── components/
+│ │ ├── Header.jsx
+│ │ ├── ProductList.jsx
+│ │ ├── Cart.jsx
+│ │ └── Checkout.jsx
+│ ├── App.jsx
+│ └── main.jsx
 │
-├── src/                        # Main source code
-│   ├── components/             # Reusable UI components
-│   │   ├── Header.jsx          # Navigation header with cart count
-│   │   ├── ProductList.jsx     # Product listing grid with Add to Cart buttons
-│   │   ├── Cart.jsx            # Cart page with quantity control and remove options
-│   │   └── Checkout.jsx        # Checkout summary with total and confirm button
-│   │
-│   ├── assets/                 # Images or CSS files
-│   ├── App.jsx                 # Main app component controlling navigation
-│   └── main.jsx                # Entry file for rendering React app
-│
-├── package.json                # Project dependencies and scripts
-├── vite.config.js              # Vite configuration
-├── README.md                   # Project documentation
-└── .gitignore                  # Ignored files for Git
+├── package.json
+├── vite.config.js
+└── README.md
+
 
 ---
-
-
+```
 
 ## 📸 Screenshots / Demo
 
